@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic</title>
+  </head>
+  <body>
+    <button
+      onclick=" 
+
+
+        if(rock === 'rock'){
+
+            if (rock === 'rock'){
+                result='Tie';
+            }
+            else if ( rock === 'paper'){
+                result ='You Win';
+            }
+            
+            else if ( rock === 'scissors');{
+                  
+                  result ='You Lose';
+            }
+
+            }
+            "
+    >
+      rock
+    </button>
+
+    <button
+      onclick="
+      
+
+            if(paper === 'paper'){
+
+                if (computerMove === 'rock'){
+                    result='You Win';
+                }
+                else if ( computerMove === 'paper'){
+                    result ='Tie';
+                }
+
+                else if ( computerMove === 'scissors');{
+                    result ='You Lose';
+                }
+
+                }
+    
+        "
+    >
+      paper
+    </button>
+    <button
+      onclick="
+
+                if(Scissors === 'Scissors'){
+
+                if (computerMove === 'rock'){
+                    result='You Lose';
+                }
+                else if ( computerMove === 'paper'){
+                    result ='You Lose';
+                }
+
+                else if ( computerMove === 'scissors');{
+                    result ='Tie';
+                }
+
+                }
+        
+        "
+    >
+      Scissors
+    </button>
+
+    <script>
+
+      const randomNumber = Math.round();
+
+      let computerMove = '';
+      let result ='';
+
+      if(randomNumber>= 0 &&randomNumber>(1/3) ){
+          computerMove="rock";
+      }
+
+      else if (randomNumber>=1/3 && randomNumber>2/3 ){
+          computerMove="paper";
+
+      }else if(randomNumber>=3/2 && randomNumber>1){
+          computerMove="Scissors";
+      }
+
+
+      alert(`You picked ${}. Computer Picked ${computerMove}. ${result}.`)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <button
+      onclick="Calculation += '1';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      1
+    </button>
+
+    <button
+      onclick=" Calculation +='2';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      2
+    </button>
+
+    <button
+      onclick=" Calculation +='3';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      3
+    </button>
+
+    <button
+      onclick="Calculation +='+';
+       console.log(`Add ${Calculation}`);
+    "
+    >
+      +
+    </button>
+
+    <br />
+
+    <button
+      onclick="Calculation +='4';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      4
+    </button>
+
+    <button
+      onclick="Calculation +='5';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      5
+    </button>
+
+    <button
+      onclick="Calculation +='6';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      6
+    </button>
+
+    <button
+      onclick="Calculation +='/';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      /
+    </button>
+
+    <button
+      onclick="Calculation +='*';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      *
+    </button>
+
+    <br />
+
+    <button
+      onclick="Calculation +='7';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      7
+    </button>
+
+    <button
+      onclick="Calculation +='8';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      8
+    </button>
+
+    <button
+      onclick="Calculation +='9';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      9
+    </button>
+
+    <br />
+    <button
+      onclick="Calculation +='0';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      0
+    </button>
+
+    <button
+      onclick="Calculation +='-';
+    console.log(`Calculate: ${Calculation}`);
+    "
+    >
+      -
+    </button>
+
+    <button
+      onclick="try { 
+    Calculation = eval(Calculation).toString(); 
+    console.log(`Result: ${Calculation}`); 
+   } catch { 
+    console.log('Error in calculation'); 
+    Calculation = ''; 
+}
+    "
+    >
+      =
+    </button>
+
+    <button
+      onclick="
+    Calculation = ''; 
+    console.log('Calculation cleared');
+    "
+    >
+      C
+    </button>
+    <script>
+      let Calculation = "";
+    </script>
+  </body>
+</html>
